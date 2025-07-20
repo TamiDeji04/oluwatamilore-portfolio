@@ -1,36 +1,107 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Modern Portfolio Website
 
-## Getting Started
+A professional, responsive portfolio website built with Next.js, TypeScript, and Tailwind CSS. Features a clean design, smooth animations, and mobile-first approach.
 
-First, run the development server:
+## ✨ Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- **Modern Stack**: Next.js 15, TypeScript, Tailwind CSS
+- **Responsive Design**: Mobile-first approach with beautiful layouts
+- **Performance Optimized**: Fast loading with excellent Lighthouse scores
+- **Interactive Elements**: Smooth hover effects and animations
+- **Accessible**: Keyboard navigable with proper contrast and alt tags
+- **SEO Optimized**: Proper meta tags and semantic HTML
+
+## 🚀 Getting Started
+
+1. **Install dependencies**:
+   ```bash
+   npm install
+   ```
+
+2. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
+
+3. **Open your browser** and visit [http://localhost:3000](http://localhost:3000)
+
+## 📁 Project Structure
+
+```
+src/
+├── app/
+│   ├── layout.tsx          # Root layout with navbar
+│   ├── page.tsx            # Main page with all sections
+│   └── globals.css         # Global styles
+└── components/
+    ├── Navbar.tsx          # Navigation with mobile menu
+    ├── Hero.tsx            # Hero section with CTA
+    ├── Projects.tsx        # Featured projects showcase
+    ├── About.tsx           # About section with skills
+    └── Contact.tsx         # Contact form and info
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Customization
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Personal Information
+Update the following files with your information:
+- `src/components/Hero.tsx` - Name, headline, bio, tech stack
+- `src/components/About.tsx` - Personal story, skills, experience
+- `src/components/Contact.tsx` - Contact details, social links
+- `src/components/Projects.tsx` - Your projects and demos
+- `src/app/layout.tsx` - Meta tags and site title
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Styling
+- Colors and themes can be customized in Tailwind classes
+- Add custom CSS in `src/app/globals.css`
+- Icons are from [Lucide React](https://lucide.dev/)
 
-## Learn More
+### Projects Section
+Replace the example projects in `Projects.tsx` with your own:
+```typescript
+const projects = [
+  {
+    title: 'Your Project Name',
+    description: 'Brief description',
+    problem: 'What problem it solves',
+    solution: 'How you solved it',
+    tech: ['React', 'Next.js', 'etc'],
+    liveUrl: 'https://your-demo.com',
+    githubUrl: 'https://github.com/you/repo',
+    featured: true
+  }
+]
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Deployment
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Vercel (Recommended)
+1. Push your code to GitHub
+2. Connect your repository to [Vercel](https://vercel.com)
+3. Deploy with one click
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Netlify
+1. Build the project: `npm run build`
+2. Deploy the `out` folder to [Netlify](https://netlify.com)
 
-## Deploy on Vercel
+### Other Platforms
+The site works on any static hosting platform that supports Next.js.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📊 Performance Tips
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Images are optimized with Next.js Image component
+- Fonts are optimized with Google Fonts
+- CSS is purged and minified by Tailwind
+- JavaScript is code-split automatically by Next.js
+
+## 🛠️ Built With
+
+- [Next.js](https://nextjs.org/) - React framework
+- [TypeScript](https://www.typescriptlang.org/) - Type safety
+- [Tailwind CSS](https://tailwindcss.com/) - Styling
+- [Lucide React](https://lucide.dev/) - Icons
+- [Inter Font](https://fonts.google.com/specimen/Inter) - Typography
+
+## 📝 License
+
+This project is open source and available under the [MIT License](LICENSE).
