@@ -2,6 +2,7 @@
 
 import { useState } from 'react'
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react'
+import { PERSONAL_INFO } from '../constants'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -52,9 +53,9 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Email</h4>
-                  <p className="text-gray-600">adeoluw@lycoming.edu</p>
+                  <p className="text-gray-600">{PERSONAL_INFO.email}</p>
                   <a 
-                    href="mailto:adeoluw@lycoming.edu"
+                    href={`mailto:${PERSONAL_INFO.email}`}
                     className="text-blue-600 hover:text-blue-800 font-medium"
                   >
                     Send me an email →
@@ -68,7 +69,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Location</h4>
-                  <p className="text-gray-600">Richmond, TX / Williamsport, PA</p>
+                  <p className="text-gray-600">{PERSONAL_INFO.location}</p>
                   <p className="text-sm text-gray-500">Open to remote and on-site opportunities</p>
                 </div>
               </div>
@@ -79,7 +80,7 @@ export default function Contact() {
                 </div>
                 <div>
                   <h4 className="text-lg font-semibold text-gray-900">Phone</h4>
-                  <p className="text-gray-600">862-372-3412</p>
+                  <p className="text-gray-600">{PERSONAL_INFO.phone}</p>
                   <p className="text-sm text-gray-500">Available for calls and messages</p>
                 </div>
               </div>
@@ -203,7 +204,7 @@ export default function Contact() {
         {/* Footer */}
         <div className="mt-16 pt-8 border-t border-gray-200 text-center">
           <p className="text-gray-600">
-            © 2024 Oluwatamilore Adedeji-Ibraheem. Built with Next.js and Tailwind CSS.
+            © 2024 {PERSONAL_INFO.name}. Built with Next.js and Tailwind CSS.
           </p>
         </div>
       </div>

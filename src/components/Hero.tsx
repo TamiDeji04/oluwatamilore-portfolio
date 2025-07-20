@@ -1,6 +1,7 @@
 'use client'
 
 import { ArrowDown, Download, Mail, Github, Linkedin } from 'lucide-react'
+import { PERSONAL_INFO, TECH_STACK } from '../constants'
 
 export default function Hero() {
   return (
@@ -11,26 +12,28 @@ export default function Hero() {
           <div className="mb-8">
             <div className="relative w-32 h-32 mx-auto mb-6">
               <div className="w-full h-full bg-gradient-to-br from-blue-400 to-purple-500 rounded-full flex items-center justify-center text-white text-4xl font-bold">
-                OA
+                {PERSONAL_INFO.name.split(' ').map(n => n[0]).join('')}
               </div>
             </div>
           </div>
 
           {/* Main Headline */}
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-            Computer Science Student who{' '}
-            <span className="text-blue-600">builds innovative software</span>
+            {PERSONAL_INFO.name}
           </h1>
+          
+          <h2 className="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">
+            {PERSONAL_INFO.title}
+          </h2>
 
           {/* Subtitle */}
           <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
-            Computer Science student at Lycoming College with a passion for AI development and software engineering. 
-            Currently building Nexus, an AI-powered reminder app, alongside experience in Java, Python, and JavaScript.
+            {PERSONAL_INFO.bio}
           </p>
 
           {/* Tech Stack */}
           <div className="flex flex-wrap justify-center gap-3 mb-10">
-            {['AI/ML', 'JavaScript', 'Java', 'Python', 'React', 'Git'].map((tech) => (
+            {TECH_STACK.map((tech) => (
               <span
                 key={tech}
                 className="px-4 py-2 bg-white/80 backdrop-blur-sm rounded-full text-sm font-medium text-gray-700 shadow-sm"

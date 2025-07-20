@@ -1,6 +1,7 @@
 'use client'
 
 import { Code, Palette, Zap, Users } from 'lucide-react'
+import { SKILLS_EXTENDED } from '../constants'
 
 export default function About() {
   const skills = [
@@ -112,10 +113,7 @@ export default function About() {
                 Technologies I work with:
               </h4>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
-                {[
-                  'AI/ML', 'JavaScript', 'React', 'Java', 'Python', 'C++',
-                  'Calendar APIs', 'Android Studio', 'JavaFX', 'Git', 'GitHub', 'OOP'
-                ].map((tech) => (
+                {SKILLS_EXTENDED.map((tech) => (
                   <div
                     key={tech}
                     className="px-3 py-2 bg-white border border-gray-200 rounded-md text-sm text-gray-700 text-center hover:border-blue-300 transition-colors"
