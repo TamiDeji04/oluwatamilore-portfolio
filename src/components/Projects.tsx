@@ -69,7 +69,7 @@ export default function Projects() {
             Featured Projects
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Here are some of my projects that showcase my skills in AI development, Java programming, game development, and mobile app creation.
+            Here are some of my projects that showcase my skills in AI development, cybersecurity-focused programming, Java development, and secure application design.
           </p>
         </div>
 

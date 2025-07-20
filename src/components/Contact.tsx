@@ -34,8 +34,8 @@ export default function Contact() {
             Let&apos;s Work Together
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            I&apos;m always interested in internship opportunities, collaborative projects, and learning experiences. 
-            Let&apos;s connect and discuss how we can work together.
+            I&apos;m always interested in cybersecurity internships, security-focused projects, and learning opportunities. 
+            Let&apos;s connect and discuss cybersecurity roles or collaborative security projects.
           </p>
         </div>
 

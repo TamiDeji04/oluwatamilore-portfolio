@@ -6,6 +6,11 @@ import { SKILLS_EXTENDED } from '../constants'
 export default function About() {
   const skills = [
     {
+      icon: <Users className="w-6 h-6" />,
+      title: 'Cybersecurity',
+      description: 'Passionate about network security, ethical hacking, and protecting digital systems - aspiring cybersecurity analyst'
+    },
+    {
       icon: <Zap className="w-6 h-6" />,
       title: 'AI Development',
       description: 'Building intelligent applications with AI-driven features and smart automation'
@@ -19,11 +24,6 @@ export default function About() {
       icon: <Palette className="w-6 h-6" />,
       title: 'Mobile Development',
       description: 'Android app development using Java and Android Studio with Material Design'
-    },
-    {
-      icon: <Users className="w-6 h-6" />,
-      title: 'Problem Solving',
-      description: 'Strong foundation in data structures, algorithms, and system design'
     }
   ]
 
@@ -40,20 +40,20 @@ export default function About() {
             <div className="space-y-4 text-gray-600 leading-relaxed">
               <p>
                 I&apos;m a dedicated Computer Science student at Lycoming College, expected to graduate 
-                in May 2026. My journey in programming began with curiosity about how software works, 
-                and has evolved into a passion for creating innovative applications and games.
+                in May 2026. My journey began with curiosity about how software works and has evolved 
+                into a passion for cybersecurity, AI development, and creating secure digital solutions.
               </p>
               
               <p>
-                I specialize in Java development with experience in Android app creation, 
-                game development using JavaFX, and object-oriented programming principles. 
-                I believe great software combines functionality with engaging user experiences.
+                As an aspiring cybersecurity analyst, I&apos;m building expertise in network security, 
+                ethical hacking, and digital protection while developing skills in Java, Python, and 
+                JavaScript. I believe in creating software that&apos;s not just functional, but secure and resilient.
               </p>
               
               <p>
-                Currently pursuing certifications in Git and GitHub while working on exciting 
-                projects like Space Invaders simulations and Android music applications. 
-                I&apos;m always eager to learn new technologies and tackle challenging problems.
+                Currently building Nexus AI-powered reminder app and pursuing cybersecurity knowledge 
+                through hands-on projects and certifications. I&apos;m passionate about protecting digital 
+                systems and aspire to work in cybersecurity-focused roles after graduation.
               </p>
             </div>
 
@@ -64,11 +64,11 @@ export default function About() {
               <ul className="space-y-2 text-gray-600">
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Building interactive games and mobile applications
+                  Pursuing cybersecurity knowledge and ethical hacking skills
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Applying object-oriented programming principles
+                  Building secure AI applications and mobile solutions
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
@@ -76,7 +76,7 @@ export default function About() {
                 </li>
                 <li className="flex items-center">
                   <span className="w-2 h-2 bg-blue-600 rounded-full mr-3"></span>
-                  Learning new programming languages and frameworks
+                  Learning network security and digital forensics
                 </li>
               </ul>
             </div>
