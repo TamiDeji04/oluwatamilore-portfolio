@@ -11,7 +11,7 @@ export const PERSONAL_INFO = {
 
 export const SOCIAL_LINKS = {
   github: 'https://github.com',
-  linkedin: 'https://linkedin.com',
+  linkedin: 'https://www.linkedin.com/in/oluwatamilore-adedeji-ibraheem-bb170224b/',
   email: 'mailto:adeoluw@lycoming.edu',
 }
 

@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import { Mail, MapPin, Phone, Send, Github, Linkedin, Twitter } from 'lucide-react'
-import { PERSONAL_INFO } from '../constants'
+import { PERSONAL_INFO, SOCIAL_LINKS } from '../constants'
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -93,16 +93,20 @@ export default function Contact() {
               </h4>
               <div className="flex space-x-4">
                 <a
-                  href="https://github.com"
+                  href={SOCIAL_LINKS.github}
                   className="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-gray-600 hover:text-gray-900"
                   aria-label="GitHub"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Github size={24} />
                 </a>
                 <a
-                  href="https://linkedin.com"
+                  href={SOCIAL_LINKS.linkedin}
                   className="p-3 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow text-gray-600 hover:text-gray-900"
                   aria-label="LinkedIn"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <Linkedin size={24} />
                 </a>

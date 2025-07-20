@@ -1,7 +1,7 @@
 'use client'
 
 import { ArrowDown, Download, Mail, Github, Linkedin } from 'lucide-react'
-import { PERSONAL_INFO, TECH_STACK } from '../constants'
+import { PERSONAL_INFO, TECH_STACK, SOCIAL_LINKS } from '../constants'
 
 export default function Hero() {
   return (
@@ -65,16 +65,20 @@ export default function Hero() {
           {/* Social Links */}
           <div className="flex justify-center space-x-6 mb-12">
             <a
-              href="https://github.com"
+              href={SOCIAL_LINKS.github}
               className="text-gray-600 hover:text-gray-900 transition-colors"
               aria-label="GitHub"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Github size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href={SOCIAL_LINKS.linkedin}
               className="text-gray-600 hover:text-gray-900 transition-colors"
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin size={24} />
             </a>
